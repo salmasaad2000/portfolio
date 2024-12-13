@@ -1,0 +1,134 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color: #676a81;
+	background: #fff;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+a,a:hover,a:active,a:focus {
+	display:inline-block;
+	text-decoration:none;
+	color: #6a708e;
+	font-size:30px;
+	padding:0;
+}
+h1,h2,h3,h4,h5,h6 { 
+	margin: 0;
+	color:#43485c;
+    font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+}
+p {
+	margin: 0;
+	line-height:1.8;
+	color:#43485c;
+	font-size:14px;
+	font-family: 'Poppins', sans-serif;
+}
+img{border:none;max-width:100%; height:auto;}
+ul{
+	padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+ul li {
+	list-style: none;
+	
+}
+
+html,body{
+    height: 100%;
+	position: relative;
+}
+
+.fix{position: relative;clear: both;}
+
+
+
+
+@media (min-width: 1024px){}
+.navigation{
+    height: 150px;
+    background-color: rgb(157, 184, 190);
+}
+.navigation .nav-link{
+    display: inline-flex;
+    list-style: none;
+    float: right;
+    padding-right: 70px ;
+    margin-top: 30px;
+
+
+}
+.navigation .nav-link li{
+ padding: 30px;
+ display: inline-flex;
+}
+.navigation .nav-link li a{
+    text-decoration-color: aliceblue;
+    text-decoration: none;
+}
+.navigation .nav-header .navbar-brand{
+    float: left;
+   text-align: center;
+    margin: 30px;
+    font-size: 5em;
+}
+.clear{
+    clear: both;
+}
+
+/* welcome part */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background:url(../assets/image/971.jpg)no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:890px;
+    text-align: center;
+    margin: 30px;
+}
+
+/*.header-text-area*/
+.container .header-text h2 {
+    color: #000000;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.container .header-text h2 span {color: #71b1e6;}
+.container .header-text p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 30px 0 60px;
+    letter-spacing: 1px;
+}
+.container .header-text a {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: medium;
+    background: #69abe9;
+    border:1px solid #2e80dd;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2); 
+    transition: 0.3s linear;
+}
