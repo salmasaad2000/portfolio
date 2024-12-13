@@ -53,7 +53,6 @@ html,body{
 	position: relative;
 }
 
-.fix{position: relative;clear: both;}
 
 
 /* ----------------------------------------------------------------------------------------------------------- */
@@ -179,10 +178,13 @@ html,body{
     padding: 50px 0 100px;
     position: relative;
     text-align: center;
+    position: relative;
+    clear: both;
 }
 .section-heading{
     width: 10%;
     text-align: center;
+    font-size: large;
 }
 .single-about-txt {
     float : left;
@@ -256,12 +258,60 @@ html,body{
     border: 2px solid;
     margin-left: 20px;
     border-radius: 8px;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     line-height: 28px;
     text-align: center;
 }
 .about-list-icon ul li a img {
     margin-left: 6px;
-    width: 50%;
+    width: 100%;
+    height: 100%;
 }
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+                              /* education part */
+
+
+.education {
+    margin-top: 40px;
+    padding-top:  50px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    clear: both;
+
+}
+.education .section-heading {
+    text-align: center;
+}
+.education .container .col-sm-4 {
+    display: inline-block;
+}
+.education-horizontal-timeline {
+    padding: 80px 0;
+}
+
+/*.education-horizontal-timeline*/
+.education-horizontal-timeline .col-sm-4 {padding:0 2px;}
+
+.single-horizontal-timeline .experience-time h2{text-transform: capitalize; padding-bottom: 10px;}
+.single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
+.single-horizontal-timeline .timeline-content h4 {margin-bottom: 15px;}
+.single-horizontal-timeline p {color: #999fb3;max-width: 335px;}
+
+/*.timeline-horizontal-border*/
+.timeline-horizontal-border {
+    align-items: center;
+    padding: 20px 0 25px;
+}
+span.single-timeline-horizontal {
+    display:  inline-block;
+    background: #b2c1ce;
+    height:  1px;
+    width: 380px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+                              /* skills part */
