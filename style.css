@@ -130,7 +130,7 @@ html,body {
     float: left;
     width: 100%;
 }
-.container .header-text h2 {
+.container h2 {
 
     color: #ffffff;
     font-size: 54px;
@@ -139,8 +139,8 @@ html,body {
     line-height: 1.5;
 
 }
-.container .header-text h2 span {color: #71b1e6;}
-.container .header-text p {
+.container h2 span {color: #71b1e6;}
+.container p {
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
@@ -150,7 +150,7 @@ html,body {
     font-weight: bold;
 
 }
-.container .header-text a {
+.container a {
     width: 200px;
     height: 60px;
     line-height: 60px;
@@ -176,6 +176,9 @@ html,body {
     text-align: center;
     position: relative;
     clear: both;
+}
+.about-content{
+    margin-top: 30px;
 }
 .section-heading {
     width: 10%;
@@ -276,12 +279,11 @@ html,body {
     text-align: center;
     position: relative;
     clear: both;
-
 }
-.education .section-heading {
+.education .timeline-title {
     text-align: center;
 }
-.education .container .col-sm-4 {
+.education .col-sm-4 {
     display: inline-block;
 }
 .education-horizontal-timeline {
@@ -323,10 +325,10 @@ span.single-timeline-horizontal {
 .tools .section-heading {
     text-align: center;
 }
-.content {
+.tools .content {
     padding-bottom: 10px;
 }
-.tools .container .col-sm-4 {
+.tools .tools-horizontal .col-sm-4 {
     display: inline-block;
 }
 .tools-horizontal {
@@ -348,7 +350,10 @@ span.single-timeline-horizontal {
     clear: both;
 }
 
-.experience-content {padding-top: 100px;}
+.experience-content {
+    padding-top: 100px;
+    margin-top:40px ;
+}
 .single-timeline-box {margin-bottom: 75px;}
 
 /*experience-time*/
@@ -389,16 +394,6 @@ span.single-timeline-horizontal {
     border-left: 2px solid #ddd;
 }
 
-.timeline-item .dot {
-    position: absolute;
-    left: -6px;
-    top: 0;
-    width: 12px;
-    height: 12px;
-    background-color: magenta;
-    border-radius: 50%;
-}
-
 .timeline-item h3 {
     margin: 0;
     font-size: 18px;
@@ -417,7 +412,6 @@ span.single-timeline-horizontal {
     color: #999;
 }
 
-.experience-time-responsive{display: none;}
 
 /* ----------------------------------------------------------------------------------------------------------- */
                               /* contact me part */
@@ -428,7 +422,7 @@ span.single-timeline-horizontal {
     clear: both;
 }
 .single-contact-box {padding-top: 100px;}
-.contact-form  .form-group {
+.contact-form .form-group {
     margin-bottom: 20px;
     
 }
