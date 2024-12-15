@@ -88,24 +88,23 @@ body {
     background-color: rgb(157, 184, 190);
     z-index: 1000;
     position: fixed;
+    float: left;
     top: 0;
     width: 100%;
     transition: 0.4s;
 }
 
 .navigation .nav-link {
-    display: inline-flex;
     list-style: none;
-    float: right;
     padding-right: 70px;
-    margin-top: 30px;
+    margin-top: 60px;
 
 
 }
 
 .navigation .nav-link li {
     padding: 30px;
-    display: inline-flex;
+    display: inline;
 }
 
 .navigation .nav-link li a {
@@ -517,25 +516,23 @@ span.single-timeline-horizontal {
 .project .col-sm-4 {
     display: inline-block;
     text-align: center;
+    padding: 0 2px;
 }
 
 .project-horizontal-timeline {
     padding: 40px 0;
 }
-
-/*.education-horizontal-timeline*/
-.project-horizontal-timeline .col-sm-4 {
-    padding: 0 2px;
+.single-horizontal-project{
+    width: 60%;
 }
-
 .single-horizontal-project .project-name h2 {
     text-transform: capitalize;
     padding-bottom: 10px;
 }
 
 .single-horizontal-project .project-content img {
-    margin-bottom: 15px;
-    width: 30%;
+    margin-bottom: 30px;
+    width: 20%;
     height: 10%;
     max-width: 20%;
 }
@@ -543,10 +540,10 @@ span.single-timeline-horizontal {
 .single-horizontal-project p {
     color: #999fb3;
     max-width: 335px;
+    text-align: center;
 }
 
-/*.timeline-horizontal-border*/
-.timeline-horizontal-border {
+.project-horizontal-border {
     align-items: center;
     padding: 20px 0 25px;
 }
