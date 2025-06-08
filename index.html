@@ -473,11 +473,10 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title animate">Contact Me</h2>
-            <form action="https://formsubmit.co/salma.saad.2026@gmail.com" method="POST" class="contact-form">
+            <form id="contactForm" class="contact-form">
                 <!-- Required FormSubmit Settings -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-
                 <!-- Form Fields -->
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Name*" required>
@@ -491,7 +490,10 @@
                 <div class="form-group">
                     <textarea name="message" placeholder="Message*" required></textarea>
                 </div>
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <div id="formStatus"></div>
             </form>
             <div class="contact-info-container animate delay-2">
                 <div class="contact-info">
@@ -557,7 +559,44 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const status = document.getElementById('formStatus');
+
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+
+            fetch('https://formsubmit.co/ajax/salma.saad.2026@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: this.name.value,
+                    email: this.email.value,
+                    subject: this.subject.value,
+                    message: this.message.value
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    status.innerHTML = '✓ Message sent successfully!';
+                    status.style.color = '#28a745';
+                    this.reset();
+                })
+                .catch(error => {
+                    status.innerHTML = '✗ Error sending message. Please email me directly.';
+                    status.style.color = '#dc3545';
+                })
+                .finally(() => {
+                    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                    btn.disabled = false;
+                });
+        });
+    </script>
 </body>
 
 </html>
