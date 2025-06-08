@@ -473,22 +473,22 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title animate">Contact Me</h2>
-            <form id="contactForm" class="contact-form">
+            <form id="contactForm" class="contact-form animate delay-1">
                 <!-- Required FormSubmit Settings -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
                 <!-- Form Fields -->
                 <div class="form-group">
-                    <input type="text" name="name" placeholder="Name*" required>
+                    <input type="text" name="name" class="form-control" placeholder="Name*" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Email*" required>
+                    <input type="email" name="email" class="form-control" placeholder="Email*" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="subject" placeholder="Subject">
+                    <input type="text" name="subject" class="form-control" placeholder="Subject">
                 </div>
                 <div class="form-group">
-                    <textarea name="message" placeholder="Message*" required></textarea>
+                    <textarea name="message" class="form-control" placeholder="Message*" required></textarea>
                 </div>
                 <button type="submit" class="btn" id="submitBtn">
                     <i class="fas fa-paper-plane"></i> Send Message
